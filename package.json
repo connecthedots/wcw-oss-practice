@@ -1,0 +1,28 @@
+{
+  "name": "wcw-oss-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:algorithms": "mocha --compilers js:babel-register ./algorithms/test/*.js",
+    "test:data": "mocha --compilers js:babel-register ./data-structures/test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DianaVashti/wcw-oss-practice.git"
+  },
+  "author": "DiV",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DianaVashti/wcw-oss-practice/issues"
+  },
+  "homepage": "https://github.com/DianaVashti/wcw-oss-practice#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "chai-change": "^2.1.2",
+    "mocha": "^3.5.3"
+  }
+}

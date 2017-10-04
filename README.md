@@ -21,6 +21,10 @@ First I am going to simply list the steps in bullet points and the below I have
 a more detailed description of what these steps are doing. Consider the first
 part the TL;DR  
 
+FIRST: Check out the files called `algorithmsSpecs.md` and `dataStructuresSpecs.md` to see what the options are for you to work on today. All algorithms and data-structure specs should be detailed in their respective `.md` file. Just look over at first and revisit later when you are ready to choose one. Ask for help if you need it to determine what's appropriate for your skill level. 
+
+THEN:
+
 1. Go [here](https://github.com/DianaVashti/wcw-oss-practice) and `fork` the repository.
   - hint: it's the upper right corner of the page.
 2. You should have been redirected to what looks like the same repository but if you notice the URL now says `https://github.com/YOUR_GITHUB_HANDLE/wcw-oss-practice` instead of `https://github.com/DianaVashti/wcw-oss-practice`. This means you forked it, yay!

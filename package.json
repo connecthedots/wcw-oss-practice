@@ -18,11 +18,9 @@
   },
   "homepage": "https://github.com/DianaVashti/wcw-oss-practice#readme",
   "dependencies": {
-    "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
-    "chai-change": "^2.1.2",
     "mocha": "^3.5.3"
   }
 }

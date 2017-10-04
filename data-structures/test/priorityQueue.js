@@ -1,8 +1,5 @@
 import chai, { expect } from 'chai'
-import chaiChange from 'chai-change'
 import PriorityQueue from '../src/priorityQueue'
-
-chai.use(chaiChange)
 
 describe('PriorityQueue', () => {
   'use strict'

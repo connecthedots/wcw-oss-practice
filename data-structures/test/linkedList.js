@@ -1,8 +1,5 @@
 import chai, { expect } from 'chai'
-import chaiChange from 'chai-change'
 import LinkedList from '../src/linkedList'
-
-chai.use(chaiChange)
 
 describe('LinkedList', () => {
   'use strict'

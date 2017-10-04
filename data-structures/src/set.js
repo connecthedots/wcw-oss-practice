@@ -1,94 +1,53 @@
 export default class Set {
+  // start with this as the constructor of your Doubly-Linked-List class
+  // do not edit:
   constructor() {
     this.length = 0
     this.elements = []
   }
 
   add(element) {
-    this.length === 0
-      ? this.elements.push(element)
-      : this.elements[this.length] = element
-    this.length += 1
+    // your code here
   }
 
   isEmpty() {
-    return this.length === 0
+    // your code here
   }
 
   contains(searchTerm) {
-    return this.elements.includes(searchTerm)
+    // your code here
   }
 
   remove(searchTerm) {
-    const array = this.elements
-    const index = array.indexOf(searchTerm)
-    if (!array.includes(searchTerm)) {
-      return null
-    } else if (index >= 0){
-      array.splice(index, 1)
-      this.length -= 1
-    }
+    // your code here
   }
 
   forEach(sett, callback) {
-    for (var i in sett){
-      sett[i] = callback(sett[i])
-    }
+    // your code here
   }
 
   size() {
-    return this.length
+    // your code here
   }
 
   setUnion(arr2) {
-    const arr1 = this.elements
-    const arr = arr1.concat(arr2).sort()
-    for (var i=0; i<arr.length; i++){
-      if (arr[i] === arr[i+1]){
-        arr.splice(arr[i], 1)
-      }
-    }
-    this.length = arr.length
-    return arr
+    // your code here
   }
 
   intersection(arr) {
-    const arr2 = this.elements
-    const sorted_arr = arr2.concat(arr).sort()
-    const results = []
-    for (var i = 0; i < sorted_arr.length - 1; i++) {
-        if (sorted_arr[i + 1] == sorted_arr[i]) {
-            results.push(sorted_arr[i]);
-        }
-    }
-    this.length = results.length
-    return results
+    // your code here
   }
 
   difference(arr1){
-    const arr2 = this.elements
-    const concatSortArray = arr1.concat(arr2).sort()
-    const results = []
-    for (var i=0; i<concatSortArray.length; i++){
-      arr1.includes(concatSortArray[i])
-        ? null
-        : results.push(concatSortArray[i])
-    }
-    this.length = results.length
-    return results
+    // your code here
   }
 
   isSubset(secondSet) {
-      return secondSet.elements.every((elements, index, array) => {
-        return this.elements.indexOf(elements) !== -1;
-      })
-    }
+    // your code here
+  }
 
   clone() {
-    const sett = new Set()
-    sett.length = this.length
-    sett.elements = this.elements
-    return sett
+    // your code here
   }
 
 }

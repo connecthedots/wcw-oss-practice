@@ -1,241 +1,80 @@
-'use strict'
-
+// start with this as the structure of a node in a Doubly-Linked-List
+// do not edit:
 function Node(data) {
   this.data = data
   this.next = null
 }
 
 export default class LinkedList {
+  // start with this as the constructor of your Doubly-Linked-List class
+  // do not edit:
   constructor() {
     this.length = 0
     this.head = null
   }
 
   isEmpty() {
-    return this.length === 0
+    // your code here
   }
 
   size() {
-    return this.length
+    // your code here
   }
 
   clear() {
-    this.length = 0
-    this.head = null
+    // your code here
   }
 
   insert(data) {
-    var node = new Node(data)
-    var currentNode = this.head
-    if (!currentNode) {
-      this.head = node
-      this.length += 1
-      return node
-    }
-    while (currentNode.next) {
-      currentNode = currentNode.next
-    }
-    currentNode.next = node
-    this.length += 1
-    return node
+    // your code here
   }
 
   getHeadNode(data) {
-    return this.head
+    // your code here
   }
 
   contains(data) {
-    var currentNode = this.head
-    if (!currentNode) {
-      return null
-    }
-    while (currentNode) {
-      if (currentNode.data === data){
-        return true
-      } else {
-        currentNode = currentNode.next
-      }
-    } return false
+    // your code here
   }
 
   insertFirst(data) {
-    var node = new Node(data)
-    var currentNode = this.head
-    if (!currentNode) {
-      this.head = node
-      this.length += 1
-    } else {
-      this.next = currentNode
-      this.head = node
-      node.next = currentNode
-      this.length += 1
-    }
+    // your code here
   }
 
   find(data) {
-    var currentNode = this.head
-    if (!currentNode) {
-      return null
-    }
-    while (currentNode) {
-      if (currentNode.data === data){
-        return currentNode
-      } else {
-        currentNode = currentNode.next
-      }
-    } return -1
+    // your code here
   }
 
   findByNext(data) {
-    let currentNode = this.head
-
-    if(!currentNode) {
-      return null
-    } else if (!currentNode.next && currentNode.data === data){
-      return clear()
-    } else {
-      while(currentNode.next){
-        if(currentNode.next.data === data){
-          return currentNode
-        } else {
-          currentNode = currentNode.next
-        }
-      } return null
-    }
+    // your code here
   }
 
   removeWithFind(data) {
-    let currentNode = this.head
-    const findByNext = function(data) {
-
-      if(!currentNode) {
-        return null
-      } else if (!currentNode.next && currentNode.data === data){
-        return clear()
-      } else {
-        while(currentNode.next){
-          if(currentNode.next.data === data){
-            return currentNode
-          } else {
-            currentNode = currentNode.next
-          }
-        } return null
-      }
-    }
-
-    let foundNode = findByNext(data)
-      if (foundNode === null){
-        return null
-      } else {
-        foundNode.next = foundNode.next.next
-        return this.length--
-      }
+    // your code here
   }
 
   removeBy(data) {
-    let currentNode = this.head
-
-    if(!currentNode){
-      return null
-    } else {
-      while(currentNode){
-        if(currentNode.data === data){
-          if(!currentNode.next){
-            this.head = null
-            return this.length--
-          } else {
-            currentNode = currentNode.next
-            this.length--
-            return this.head = currentNode
-          }
-        } else if (currentNode.next.data === data){
-          currentNode.next = currentNode.next.next
-          return this.length--
-        } else if (currentNode.next !== null){
-          currentNode = currentNode.next
-        } else {
-          return alert("no such node exists")
-        }
-      }
-    }
+    // your code here
   }
 
   insertAfter(searchTerm, data) {
-    var node = new Node(data)
-    var currentNode = this.head
-    if (!currentNode) {
-      this.head = node
-      return this.length += 1
-    } else {
-      while (currentNode) {
-        if (currentNode.data === searchTerm){
-          node.next = currentNode.next
-          currentNode.next = node
-          return this.length += 1
-        } else {
-          return -1
-        }
-      }
-    }
+    // your code here
   }
 
   insertBefore(searchTerm, data) {
-    var node = new Node(data)
-    var currentNode = this.head
-    if (!currentNode) {
-      this.head = node
-      return this.length += 1
-    } else {
-      while (currentNode) {
-        if (currentNode.next.data === searchTerm){
-          node.next = currentNode.next
-          currentNode.next = node
-          return this.length += 1
-        } else {
-          return -1
-        }
-      }
-    }
+    // your code here
   }
 
   removeFirst() {
-    var node = new Node()
-    var currentNode = this.head
-    if (this.length === 0){
-      return null
-    } else {
-      this.head = currentNode.next
-      node = this.head
-      this.length -= 1
-    }
+    // your code here
   }
 
   getTailNode(data) {
-    var node = new Node(data)
-    var currentNode = this.head
-    if (!currentNode) {
-      return null
-    }
-    while (currentNode.next) {
-      currentNode = currentNode.next
-    }
-    return currentNode
+    // your code here
   }
 
   remove() {
-    var currentNode = this.head
-    if (!currentNode || !currentNode.next){
-      return null
-    } else if (!currentNode.next.next){
-      currentNode.next = null
-      return this.length -= 1
-    } else {
-      while (currentNode.next.next){
-        currentNode = currentNode.next
-        currentNode.next = null
-        return this.length -= 1
-      }
-    }
+    // your code here
   }
 
 }

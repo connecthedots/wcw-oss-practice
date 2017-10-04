@@ -1,3 +1,5 @@
+// start with this as the structure of a node in a Doubly-Linked-List
+// do not edit:
 function Node(data, weight) {
   this.data = data
   this.weight = weight
@@ -5,88 +7,35 @@ function Node(data, weight) {
 }
 
 export default class PriorityQueue {
+  // start with this as the constructor of your Doubly-Linked-List class
+  // do not edit:
   constructor() {
     this.size = 0
     this.head = null
   }
 
   enqueue(data, weight) {
-    var node = new Node(data, weight)
-    var currentNode = this.head
-    if (!currentNode) {
-      this.head = node
-      return this.size += 1
-    } else if (!currentNode.next){
-      if (currentNode.weight >= node.weight){
-        node.next = currentNode
-        this.head = node
-        return this.size += 1
-      } else {
-        currentNode.next = node
-        return this.size += 1
-      }
-    } else {
-      while (currentNode.next){
-        if (currentNode.next.weight > this.weight){
-          node.next = currentNode.next
-          currentNode.next = node
-          return this.size += 1
-        }
-      }
-    }
+    // your code here
   }
 
   dequeue(data, weight) {
-    var node = new Node(data, weight)
-    var currentNode = this.head
-    if (!currentNode) {
-      return null
-    } else {
-      while (currentNode) {
-        if (currentNode.next === null){
-          node = currentNode
-          this.size -= 1
-          return node
-        } else {
-          currentNode = currentNode.next
-        }
-      }
-    }
+    // your code here
   }
 
   front(data, weight) {
-    var node = new Node(data, weight)
-    var currentNode = this.head
-    if (!currentNode) {
-      return null
-    } else {
-      while (currentNode) {
-        if (currentNode.next === null){
-          node = currentNode
-          return node
-        } else {
-          currentNode = currentNode.next
-        }
-      }
-    }
+    // your code here
   }
 
   back(data, weight) {
-    var node = new Node(data, weight)
-    var currentNode = this.head
-    if (!currentNode) {
-      return null
-    } else {
-      return currentNode
-    }
+    // your code here
   }
 
   isEmpty() {
-    return this.size === 0
+    // your code here
   }
 
   length() {
-    return this.size
+    // your code here
   }
 
 }

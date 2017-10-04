@@ -1,37 +1,30 @@
 export default class Stack {
+  // start with this as the constructor of your Doubly-Linked-List class
+  // do not edit:
   constructor() {
     this.size = 0
     this.elements = []
   }
 
   length() {
-    return this.size
+    // your code here
   }
 
   isEmpty() {
-    return this.size === 0
+    // your code here
   }
 
   push(elementToAdd) {
-    this.elementToAdd = elementToAdd
-    this.size += 1
-    return this.elements = this.elements.concat(elementToAdd)
+    // your code here
   }
 
 
   pop() {
-    if (this.size === 0){
-      return null
-    }
-    this.size -= 1
-    return this.elements.splice(this.elements.length - 1, 1)
+    // your code here
   }
 
   peek() {
-    if (this.elements.length === 0){
-      return null
-    }
-    return this.elements[this.elements.length - 1]
+    // your code here
   }
 
 }

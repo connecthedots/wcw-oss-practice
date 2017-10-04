@@ -1,41 +1,34 @@
 export default class Queue {
+  // start with this as the constructor of your Doubly-Linked-List class
+  // do not edit:
   constructor() {
     this.size = 0
     this.elements = []
   }
 
   enqueue(elementToAdd) {
-    this.size += 1
-    this.elements = [ ...this.elements, ...[elementToAdd] ]
-    return this.elements
+    // your code here
   }
 
   dequeue() {
-    if (this.size === 0){
-      return null
-    } this.size -= 1
-      return this.elements.splice(0, 1)[0]
+    // your code here
   }
 
   front() {
-    if (this.size === 0){
-      return null
-    } return this.elements[0]
+    // your code here
   }
 
 
   back() {
-    if (this.size === 0){
-      return null
-    } return this.elements[this.elements.length - 1]
+    // your code here
   }
 
   isEmpty() {
-    return this.size === 0
+    // your code here
   }
 
   length() {
-    return this.size
+    // your code here
   }
 
 }
